@@ -26,7 +26,9 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/phaser/dist/phaser.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -119,6 +121,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "TetrisTutorial"
+    }
+  },
+  "defaultProject": "TetrisTutorial",
+  "cli": {
+    "analytics": "cb6995f2-e825-40ba-a108-f02babebfc0f"
+  }
 }
