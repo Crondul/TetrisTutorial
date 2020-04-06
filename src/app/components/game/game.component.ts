@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
 import Phaser from 'phaser';
+import { MainScene } from 'src/app/classes/main-scene';
 
 @Component({
   selector: 'app-game',
@@ -13,8 +13,8 @@ export class GameComponent implements OnInit {
   constructor() {
     this.config = {
       type: Phaser.AUTO,
-      height: 600,
-      width: 800,
+      height: 626,
+      width: 384,
       scene: [MainScene],
       parent: 'gameContainer',
       physics: {
@@ -28,20 +28,5 @@ export class GameComponent implements OnInit {
 
   ngOnInit() {
     this.phaserGame = new Phaser.Game(this.config);
-  }
-}
-
-class MainScene extends Phaser.Scene {
-  constructor() {
-    super({ key: 'main' });
-  }
-  create() {
-    console.log('create method');
-  }
-  preload() {
-    console.log('preload method');
-  }
-  update() {
-    console.log('update method');
   }
 }
